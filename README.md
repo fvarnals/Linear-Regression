@@ -1,4 +1,4 @@
-# Machine-Learning-Linear-Regression
+# Machine Learning-Linear Regression Exercise
 
 #### Case study - "Implement linear regression with one variable to predict profits for a food truck."
 
