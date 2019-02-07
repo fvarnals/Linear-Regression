@@ -1,6 +1,6 @@
 # Machine-Learning-Linear-Regression
 
-## Case study - "Implement linear regression with one variable to predict profits for a food truck."
+#### Case study - "Implement linear regression with one variable to predict profits for a food truck."
 
 Files that I had to write code in to were:
 #warmUpExercise.m# - Simple example function in Octave/MATLAB
