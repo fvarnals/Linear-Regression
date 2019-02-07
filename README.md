@@ -4,19 +4,19 @@
 
 Files that I had to write code in to were:
 
-<em> warmUpExercise.m </em> - Simple example function in Octave/MATLAB
+<em>warmUpExercise.m</em> - Simple example function in Octave/MATLAB
   
-plotData.m - Function to display the dataset
+<em>plotData.m</em> - Function to display the dataset
 
-computeCost.m - Function to compute the cost of linear regression
+<em>computeCost.m</em> - Function to compute the cost of linear regression
 
-gradientDescent.m - Function to run gradient descent
+<em>gradientDescent.m</em> - Function to run gradient descent
 
-computeCostMulti.m - Cost function for multiple variables
+<em>computeCostMulti.m</em> - Cost function for multiple variables
 
-gradientDescentMulti.m - Gradient descent for multiple variables
+<em>gradientDescentMulti.m</em> - Gradient descent for multiple variables
 
-featureNormalize.m - Function to normalize features
+<em>featureNormalize.m</em> - Function to normalize features
 
-normalEqn.m - Function to compute the normal equations
+<em>normalEqn.m</em> - Function to compute the normal equations
 
