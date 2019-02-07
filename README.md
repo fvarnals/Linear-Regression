@@ -1,7 +1,7 @@
 # Machine-Learning-Linear-Regression
 "implement linear regression with one variable to predict profits for a food truck."
 
-Files that I had to wrtie code in to were:
+Files that I had to wrtie code in to were:\n
 warmUpExercise.m - Simple example function in Octave/MATLAB
 plotData.m - Function to display the dataset
 computeCost.m - Function to compute the cost of linear regression
