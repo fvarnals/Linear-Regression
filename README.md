@@ -4,7 +4,7 @@
 
 Files that I had to write code in to were:
 
-<em> warmUpExercise.m <em> - Simple example function in Octave/MATLAB
+<em> warmUpExercise.m <\em> - Simple example function in Octave/MATLAB
   
 plotData.m - Function to display the dataset
 
