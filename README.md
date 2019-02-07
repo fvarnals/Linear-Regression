@@ -2,7 +2,7 @@
 
 #### Case study - "Implement linear regression with one variable to predict profits for a food truck."
 
-Files that I had to write code in to were:
+<strong>Files that I had to write code to:</strong>
 
 <em>warmUpExercise.m</em> - Simple example function in Octave/MATLAB
   
