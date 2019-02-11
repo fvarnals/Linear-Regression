@@ -1,12 +1,15 @@
 # Machine Learning-Linear Regression Exercise
 
-#### <em>Case study - "Implement linear regression with one variable to predict profits for a food truck."</em>
+#### <em>Implement linear regression with one variable to predict profits for a food truck. Given data of profits for each food truck and the population of the city they are in, we seek to predict whether a new city will return a good profit, based on its population.
 
-<strong>Files that I had to write code to:</strong>
+<strong>[ex1data1.txt](https://github.com/fvarnals/Linear-Regression/blob/master/ex1data1.txt) contains our dataset, where the first column gives the population of a city and the second column gives the profit of a food truck in that city. A negative value for profit indicates a loss.
 
-<em>warmUpExercise.m</em> - Simple example function in Octave/MATLAB
-  
-<em>plotData.m</em> - Function to display the dataset
+1) <strong>[plotData.m](https://github.com/fvarnals/Linear-Regression/blob/master/plotData.m) - Plot the datain our dataset:</strong><br>
+<code>figure; % open a new figure window</code><br>
+<code>plot(x,y,'rx','MarkerSize',10); %Plot the data</code><br>
+<code>ylabel('Profit in $10,000s'); %Set the y-axis label</code><br>
+<code>xlabel('Population of City in 10,000s'); %Set the x-axis label</code><br>
+
 
 <em>computeCost.m</em> - Function to compute the cost of linear regression
 
