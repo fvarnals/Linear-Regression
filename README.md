@@ -12,8 +12,9 @@
 <img src="https://github.com/fvarnals/Linear-Regression/blob/master/Figure1.png" width=500 >
 
 2) <strong>[computeCost.m](https://github.com/fvarnals/Linear-Regression/blob/master/computeCost.m) - Compute the cost of our linear regression model:</strong><br>
+<code>function J = computeCost(X, y, theta)</code>
 
-- We seek to calculate the cost (accuracy) of out model using the mean squared error, using the following function:<br>
+- We seek to calculate the cost (accuracy) of our model using the mean squared error, following the below function:<br>
 <img src="https://github.com/fvarnals/Linear-Regression/blob/master/cost_function.png" width=300 >
 
 - Where the hypothesis is given by the linear model:<br>
@@ -21,7 +22,7 @@
 
 - Using the values of population size in 10,000s (<code>X</code>), and profit in $10,000s (<code>y</code>), we calculate the <code>cost</code> using initial theta values of <code>-1</code> and <code>2</code>.
 
-3) <strong>[gradientDescent.m.m](https://github.com/fvarnals/Linear-Regression/blob/master/gradientDescent.m) - Function to run gradient descent:</strong><br>
+3) <strong>[gradientDescent.m](https://github.com/fvarnals/Linear-Regression/blob/master/gradientDescent.m) - Function to run gradient descent:</strong><br>
 
 - Having computed the cost function, we can now run gradient descent to find the Theta values which minimise the cost/error of our function, thereby giving better accuracy for out predictions of profit for a given population size.
 
@@ -39,12 +40,16 @@
 <code>theta_change = alpha * (1/m) * (X' * errors_vector); </code><br>
 <code>theta = theta - theta_change;</code><br>
 
+- As we perform gradient descent to minimize the cost function J(θ), we monitor the convergence by computing the cost at each step:<br>
+<code>J_history(iter) = computeCost(X, y, theta)</code><br>
+(We expect the value of J(θ) to converge to a steady value by the end of the algorithm.)
 
-<em>computeCostMulti.m</em> - Cost function for multiple variables
+4) <strong>[featureNormalize.m](https://github.com/fvarnals/Linear-Regression/blob/master/featureNormalize.m) - Function for normalisation when using multiple features:</strong><br>
 
-<em>gradientDescentMulti.m</em> - Gradient descent for multiple variables
+- We scale the features by taking each value and subtracting the mean value of that feature, and dividing by the standard deviation. We use feature scaling to help gradient descent converge more quickly.
 
-<em>featureNormalize.m</em> - Function to normalize features
+5) <strong>[normalEqn.m](https://github.com/fvarnals/Linear-Regression/blob/master/normalEqn.m) - Function to compute the normal equations:</strong><br>
 
-<em>normalEqn.m</em> - Function to compute the normal equations
+- We also use the normal equation (shown below) to find the optimum values of theta. This method does not require feature scaling and avoids having to run gradient descent, making the process faster. It's a good alternative method as long as the number of features is not very large (~10,000+). This is because the process involves the inversion of the matrix <code>X</code> which is very computationally expensive (i.e. slow) when dealing with very high dimension matrices.<br>
+<img src="https://github.com/fvarnals/Linear-Regression/blob/master/normalequation.png" width=300 ><br>
 
